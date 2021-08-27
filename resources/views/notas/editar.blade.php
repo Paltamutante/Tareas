@@ -11,8 +11,10 @@
 
 <form action="{{ route('notas.update', $nota->id) }}" method = "POST">
         @method('PUT')
+        <!--el toquen csrf permite prevenir un frecuente agujero de seguridad de las aplicaciones web-->
         @csrf
 
+        <!--Los botones de abajo cumplen la funcion de mostrar un mensaje de error en caso de que las casillas esten vacias-->
         @error('nombre')
         <div class="alert alert-danger alert-dismissible fade show" role="alert">
         El nombre es requerido
@@ -29,17 +31,23 @@
         </div>
         @endif
 
+        <!--Esta es la casilla donde se inserta el nombre-->
         <input type="text" name="nombre"
         placeholder="Nombre"
          class="form-control mb-2"
         value="{{ $nota-> nombre }}">
+
+        <!--Esta es la casilla donde se inserta la descripcion-->
 
         <input type="text" name="descripcion"
         placeholder="Descripcion" 
         class="form-control mb-2"
         value="{{ $nota-> descripcion }}">
 
+        <!--Este boton es para editar los datos ingresados-->
+
         <button class="btn btn-warning btn-block" type="submit">Editar</button>
 
+        
     </form>
 @endsection

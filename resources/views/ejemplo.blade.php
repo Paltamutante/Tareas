@@ -11,7 +11,7 @@
 
 <body>
     <div class="container my-4">
-         <h1 class="display-4">Tareas</h1>
+         <h1 class="display-4">Notas</h1>
     </div>
 
     @if (session('mensaje'))
@@ -39,6 +39,7 @@
         </div>
         @endif
 
+        
         <input type="text" name="nombre"placeholder="Nombre" class="form-control mb-2"
         value="{{ old('nombre') }}">
         <input type="text" name="descripcion"placeholder="Descripcion" class="form-control mb-2"
@@ -58,9 +59,9 @@
   <tbody>
         @foreach($notas as $item)  
     <tr>
-      <th scope="row">{{$item->id}}</th>
+      <th scope="row">{{$item->id}}</th><!--id adquiere parametros de $item-->
       <td>
-          <a href="{{ route('notas.detalle', $item) }}">
+          <a href="{{ route('notas.detalle', $item) }}"><!--Aquí el ancla llama al nombre de la ruta-->
                 {{$item->nombre}}
           </a>
       </td>

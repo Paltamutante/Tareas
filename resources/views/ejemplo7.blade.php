@@ -1,4 +1,6 @@
 @extends('plantilla')
 @section('seccion')
-<h1>ejemplo7</h1>
+<div class="text-center"><br>
+    <h1>Ejemplo</h1>
+</div>
 @endsection

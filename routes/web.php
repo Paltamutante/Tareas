@@ -26,7 +26,7 @@ Route::put('/editar/{id}', 'PagesController@update')->name('notas.update');
 
 Route::delete('eliminar/{id}', 'PagesController@eliminar')->name('notas.eliminar');
 
-Route::get('/ejemplo2','PagesController@ejemplo2')->name('ej2');
+Route::get('/almorzan2','PagesController@ejemplo2')->name('ej2');
 
 Route::get('/ejemplo3','PagesController@ejemplo3')->name('ej3');
     
@@ -37,3 +37,4 @@ Route::get('/ejemplo5','PagesController@ejemplo5')->name('ej5');
 Route::get('/ejemplo6','PagesController@ejemplo6')->name('ej6');
 
 Route::get('/ejemplo7','PagesController@ejemplo7')->name('ej7');
+

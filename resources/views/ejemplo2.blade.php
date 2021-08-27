@@ -1,15 +1,9 @@
 @extends('plantilla')
 @section('seccion')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>ejemplo2</h1>
-</body>
-</html>
+
+<div class="text-center"><br>
+    <h1>ALMORZANDO</h1>
+    <img src="https://www.react2424.com/thumb/22/a/0/f/a0fe08d6ab79ba6fbe2758642752c5b0.jpg" alt="">
+</div>
+
 @endsection
